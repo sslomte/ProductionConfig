@@ -19,23 +19,7 @@
 
 	<global>
 		<parameter name="LCIOInputFiles"> 
-Output_REC.000.slcio
-Output_REC.001.slcio
-Output_REC.002.slcio
-Output_REC.003.slcio
-Output_REC.004.slcio
-Output_REC.005.slcio
-Output_REC.006.slcio
-Output_REC.007.slcio
-Output_REC.008.slcio
-Output_REC.009.slcio
-Output_REC.010.slcio
-Output_REC.011.slcio
-Output_REC.012.slcio
-Output_REC.013.slcio
-Output_REC.014.slcio
-Output_REC.015.slcio
-Output_REC.016.slcio
+Output_REC_s_1evt_bib10.slcio
  </parameter>
 		<parameter name="MaxRecordNumber" value="-1" />
 		<parameter name="SkipNEvents" value="0" />
@@ -49,7 +33,7 @@ Output_REC.016.slcio
     <!-- compression of output file 0: false >0: true (default) -->
     <parameter name="Compress" type="int" value="1"/>
     <!-- filename without extension-->
-    <parameter name="FileName" type="string" value="JetHistograms"/>
+    <parameter name="FileName" type="string" value="JetHistograms_s_1evt_bib10"/>
     <!-- type of output file xml (default) or root ( only OpenScientist)-->
     <parameter name="FileType" type="string" value="root "/>
   </processor>
@@ -337,7 +321,7 @@ Output_REC.016.slcio
   <parameter name="recParticleOut" type="string" lcioOutType="ReconstructedParticle"> PandoraPFOsNoLeptonsInJets </parameter>
 </processor>
 	<processor name="MyLCIOOutputProcessor" type="LCIOOutputProcessor">
-		<parameter name="LCIOOutputFile" type="string">outputfile.slcio </parameter>
+		<parameter name="LCIOOutputFile" type="string">outputfile_s.slcio </parameter>
 		<parameter name="LCIOWriteMode" type="string">WRITE_NEW</parameter>
 		<!--parameter name="SplitFileSizekB" type="int">1992294 </parameter-->
 	</processor>
