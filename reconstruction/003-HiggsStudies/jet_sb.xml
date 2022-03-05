@@ -321,7 +321,7 @@ Output_REC_sb_1evt_bib10.slcio
   <parameter name="recParticleOut" type="string" lcioOutType="ReconstructedParticle"> PandoraPFOsNoLeptonsInJets </parameter>
 </processor>
 	<processor name="MyLCIOOutputProcessor" type="LCIOOutputProcessor">
-		<parameter name="LCIOOutputFile" type="string">outputfile_s.slcio </parameter>
+		<parameter name="LCIOOutputFile" type="string">outputfile_sb.slcio </parameter>
 		<parameter name="LCIOWriteMode" type="string">WRITE_NEW</parameter>
 		<!--parameter name="SplitFileSizekB" type="int">1992294 </parameter-->
 	</processor>
