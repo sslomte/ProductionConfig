@@ -48,14 +48,30 @@ YokeEndcapCollection -0.25 10.
 
   <processor name="OverlayBIB" type="OverlayTimingGeneric">
     <parameter name="BackgroundFileNames" type="StringVec">
-      /muoncdata/data/1500GeV/BIB/ddsim/MuCollv1_25ns_nEkin150MeV_QGSPBERT/sim_mumi-1e3x500-26m-lowth-excl_c00.slcio 
-      /muoncdata/data/1500GeV/BIB/ddsim/MuCollv1_25ns_nEkin150MeV_QGSPBERT/sim_mupl-1e3x500-26m-lowth-excl_c00.slcio 
+      
+      /cvmfs/cms.hep.wisc.edu/mucol/reference/slomte_BIBsamples/sim_mumi-1e3x500-26m-lowth-excl_j1.slcio
+      /cvmfs/cms.hep.wisc.edu/mucol/reference/slomte_BIBsamples/sim_mumi-1e3x500-26m-lowth-excl_j2.slcio
+      /cvmfs/cms.hep.wisc.edu/mucol/reference/slomte_BIBsamples/sim_mumi-1e3x500-26m-lowth-excl_j3.slcio
+      /cvmfs/cms.hep.wisc.edu/mucol/reference/slomte_BIBsamples/sim_mumi-1e3x500-26m-lowth-excl_j4.slcio
+      /cvmfs/cms.hep.wisc.edu/mucol/reference/slomte_BIBsamples/sim_mumi-1e3x500-26m-lowth-excl_j5.slcio
+      /cvmfs/cms.hep.wisc.edu/mucol/reference/slomte_BIBsamples/sim_mumi-1e3x500-26m-lowth-excl_j6.slcio
+      /cvmfs/cms.hep.wisc.edu/mucol/reference/slomte_BIBsamples/sim_mumi-1e3x500-26m-lowth-excl_j7.slcio
+      /cvmfs/cms.hep.wisc.edu/mucol/reference/slomte_BIBsamples/sim_mumi-1e3x500-26m-lowth-excl_j8.slcio
+      /cvmfs/cms.hep.wisc.edu/mucol/reference/slomte_BIBsamples/sim_mupl-1e3x500-26m-lowth-excl_j1.slcio
+      /cvmfs/cms.hep.wisc.edu/mucol/reference/slomte_BIBsamples/sim_mupl-1e3x500-26m-lowth-excl_j2.slcio
+      /cvmfs/cms.hep.wisc.edu/mucol/reference/slomte_BIBsamples/sim_mupl-1e3x500-26m-lowth-excl_j3.slcio
+      /cvmfs/cms.hep.wisc.edu/mucol/reference/slomte_BIBsamples/sim_mupl-1e3x500-26m-lowth-excl_j4.slcio
+      /cvmfs/cms.hep.wisc.edu/mucol/reference/slomte_BIBsamples/sim_mupl-1e3x500-26m-lowth-excl_j5.slcio
+      /cvmfs/cms.hep.wisc.edu/mucol/reference/slomte_BIBsamples/sim_mupl-1e3x500-26m-lowth-excl_j6.slcio
+      /cvmfs/cms.hep.wisc.edu/mucol/reference/slomte_BIBsamples/sim_mupl-1e3x500-26m-lowth-excl_j7.slcio
+      /cvmfs/cms.hep.wisc.edu/mucol/reference/slomte_BIBsamples/sim_mupl-1e3x500-26m-lowth-excl_j8.slcio
+           
     </parameter>
     <parameter name="StartBackgroundFileIndex" type="int" value="0"/>
     <parameter name="AllowReusingBackgroundFiles" type="bool" value="false" />
     <parameter name="Verbosity" options="DEBUG0-4,MESSAGE0-4,WARNING0-4,ERROR0-4,SILENT">WARNING </parameter>
     <parameter name="NBunchtrain" type="int" value="1" />
-    <parameter name="NumberBackground" type="float" value="2993" />
+    <parameter name="NumberBackground" type="float" value="299" />
   </processor>
 
   <processor name="OverlayTrimmed" type="OverlayTimingGeneric">
