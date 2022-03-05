@@ -54,7 +54,7 @@
 
     <!-- ========== Monitoring.xml  ========== -->
     <processor name="MyClicEfficiencyCalculator"/>
-    <processor name="MyRecoMCTruthLinker"/>
+    <!--<processor name="MyRecoMCTruthLinker"/>-->
     <processor name="MyTrackChecker"/>
 
     <!-- =============== PFOSelector.xml ================= -->
@@ -70,7 +70,7 @@
 
   <global>
     <parameter name="LCIOInputFiles">
-/users/muoncollider/buoninco/MuCollDet/3_TeV_studies/geo_v1/HH_coupl_04/mumu_HHnunu_3_04_0_1.slcio
+       mumu_HH_bbbb_3tev_hepmc.slcio
     </parameter>
     <!-- Limit the number of processed records (run+evt): -->
     <parameter name="MaxRecordNumber" value="-1" />
@@ -112,7 +112,7 @@
     <!-- compression of output file 0: false >0: true (default) -->
     <parameter name="Compress" type="int" value="1"/>
     <!-- filename without extension-->
-    <parameter name="FileName" type="string" value="histograms"/>
+    <parameter name="FileName" type="string" value="histograms_s_1evt_bib10"/>
     <!-- type of output file xml (default) or root ( only OpenScientist)-->
     <parameter name="FileType" type="string" value="root "/>
   </processor>
@@ -124,10 +124,10 @@
 
   <processor name="Output_REC" type="LCIOOutputProcessor">
     <!--   standard output: full reconstruction keep all collections -->
-    <parameter name="LCIOOutputFile" type="string"> Output_REC.slcio </parameter>
+    <parameter name="LCIOOutputFile" type="string"> Output_REC_s_1evt_bib10.slcio </parameter>
     <parameter name="FullSubsetCollections" type="StringVec"> EfficientMCParticles InefficientMCParticles </parameter>
-    <parameter name="LCIOWriteMode" type="string" value="None"/>
-    <parameter name="SplitFileSizekB" type="int">996147 </parameter> 
+    <parameter name="LCIOWriteMode" type="string" value="WRITE_NEW"/>
+    <!--<parameter name="SplitFileSizekB" type="int">996147 </parameter> -->
     <parameter name="Verbosity" type="string">WARNING </parameter>
     <parameter name="DropCollectionNames" type="StringVec">  </parameter>
     <parameter name="DropCollectionTypes" type="StringVec">  </parameter>
