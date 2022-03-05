@@ -53,9 +53,9 @@
     <group name="MergeCollections" />
 
     <!-- ========== Monitoring.xml  ========== -->
-    <processor name="MyClicEfficiencyCalculator"/>
+    <!--<processor name="MyClicEfficiencyCalculator"/>-->
     <!--<processor name="MyRecoMCTruthLinker"/>-->
-    <processor name="MyTrackChecker"/>
+    <!--<processor name="MyTrackChecker"/>-->
 
     <!-- =============== PFOSelector.xml ================= -->
     <group name="PfoSelector" />
