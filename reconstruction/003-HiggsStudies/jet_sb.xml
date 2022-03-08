@@ -10,7 +10,7 @@
     <processor name="MyTrueMCintoRecoForJets"/>     
     <processor name="MyFastGenJetProcessor"/>  
     <processor name="MyFastRecoJetProcessor"/>
-    <processor name="MyLCIOOutputProcessor" />
+    <!--<processor name="MyLCIOOutputProcessor" />-->
     <processor name="JetHistogramRecoJetTuple"/>
     <processor name="JetHistogramGenJetTuple"/>
     <processor name="MyJetAnalyzer" />
