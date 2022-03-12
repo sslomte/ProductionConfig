@@ -35,7 +35,7 @@
     <!--Calibration coefficients for ECAL-->
     <parameter name="CalibrECAL" type="FloatVec">35.8411424188 35.8411424188</parameter>
     <!--Threshold for ECAL Hits in GeV-->
-    <parameter name="ECALThreshold" type="float">2e-03 </parameter>
+    <parameter name="ECALThreshold" type="float">5e-03 </parameter>
     <!--Unit for ECAL Threshold. Can be "GeV", "MIP" or "px". MIP and px need properly set calibration constants-->
     <parameter name="ECALThresholdUnit" type="string">GeV </parameter>
     <!--Energy correction for ECAL endcap-->
@@ -81,17 +81,17 @@
     <!--Correct ECAL hit times for propagation: radial distance/c-->
     <parameter name="ECALCorrectTimesForPropagation" type="int">1 </parameter>
     <!--ECAL Time Window minimum time in ns-->
-    <parameter name="ECALTimeWindowMin" type="float">-1 </parameter>
+    <parameter name="ECALTimeWindowMin" type="float">-0.5 </parameter>
     <!--ECAL BarrelTime Window maximum time in ns-->
-    <parameter name="ECALBarrelTimeWindowMax" type="float">2 </parameter>
+    <parameter name="ECALBarrelTimeWindowMax" type="float">0.5 </parameter>
     <!--ECAL Endcap Time Window maximum time in ns-->
-    <parameter name="ECALEndcapTimeWindowMax" type="float">2 </parameter>
+    <parameter name="ECALEndcapTimeWindowMax" type="float">0.5 </parameter>
     <!--Use simple time window cut on hit times? If false: use original hit-time clustering algorithm. If true: use time window defined by ECALBarrelTimeWindowMin and ECALBarrelTimeWindowMax-->
     <parameter name="ECALSimpleTimingCut" type="bool">true </parameter>
     <!--ECAL Minimum Delta Time in ns for resolving two hits--> <!-- used only if ECALSimpleTimingCut is false -->
     <parameter name="ECALDeltaTimeHitResolution" type="float">10 </parameter>
     <!--ECAL Time Resolution used to smear hit times-->
-    <parameter name="ECALTimeResolution" type="float">2 </parameter>
+    <parameter name="ECALTimeResolution" type="float">0.5 </parameter>
 
     <!-- HCAL -->
 
@@ -118,7 +118,7 @@
     <!--Calibration coefficients for Other (Ring) HCAL-->
     <parameter name="CalibrHCALOther" type="FloatVec">62.2125698179</parameter>
     <!--Threshold for HCAL Hits in GeV-->
-    <parameter name="HCALThreshold" type="FloatVec">0.002  </parameter>
+    <parameter name="HCALThreshold" type="FloatVec">0.005  </parameter>
     <!--Unit for HCAL Threshold. Can be "GeV", "MIP" or "px". MIP and px need properly set calibration constants-->
     <parameter name="HCALThresholdUnit" type="string">GeV </parameter>
     <!--Energy correction for HCAL endcap-->
@@ -158,17 +158,17 @@
     <!--Correct HCAL hit times for propagation: radial distance/c-->
     <parameter name="HCALCorrectTimesForPropagation" type="int">1 </parameter>
     <!--HCAL Time Window minimum time in ns-->
-    <parameter name="HCALTimeWindowMin" type="float">-1 </parameter>
+    <parameter name="HCALTimeWindowMin" type="float">-0.5 </parameter>
     <!--HCAL Time Window maximum time in ns-->
-    <parameter name="HCALBarrelTimeWindowMax" type="float">2 </parameter>
+    <parameter name="HCALBarrelTimeWindowMax" type="float">0.5 </parameter>
     <!--HCAL Time Window maximum time in ns-->
-    <parameter name="HCALEndcapTimeWindowMax" type="float">2 </parameter>
+    <parameter name="HCALEndcapTimeWindowMax" type="float">0.5 </parameter>
     <!--Use simple time window cut on hit times? If false: use original hit-time clustering algorithm. If true: use time window defined by HCALBarrelTimeWindowMin and HCALBarrelTimeWindowMax-->
     <parameter name="HCALSimpleTimingCut" type="bool">true </parameter>
     <!--HCAL Minimum Delta Time in ns for resolving two hits--> <!-- used only if HCALSimpleTimingCut is false -->
     <parameter name="HCALDeltaTimeHitResolution" type="float">10 </parameter>
     <!--HCAL Time Resolution used to smear hit times-->
-    <parameter name="HCALTimeResolution" type="float">2 </parameter>
+    <parameter name="HCALTimeResolution" type="float">0.5 </parameter>
 
   </processor>
 
