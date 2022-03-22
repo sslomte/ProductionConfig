@@ -120,7 +120,7 @@ Output_REC_s_1evt_bib10.slcio
  <!--LCTuple creates a ROOT TTRee with a column wise ntuple from LCIO collections ....-->
   <parameter name="FullSubsetCollections" type="StringVec"> </parameter>
   <!--Name of the CalorimeterHit collection-->
-  <parameter name="CalorimeterHitCollection" type="string" lcioInType="CalorimeterHit"> </parameter>
+  <parameter name="CalorimeterHitCollection" type="string" lcioInType="CalorimeterHit"> ECALBarrel ECALEndcap HCALBarrel HCALEndcap HCALOther </parameter>
   <!--Name of the Cluster collection-->
   <parameter name="ClusterCollection" type="string" lcioInType="Cluster"> </parameter>
   <!--Name of the IsoLep collection-->
@@ -173,7 +173,7 @@ Output_REC_s_1evt_bib10.slcio
   <!--Name of the Vertex collection-->
   <parameter name="VertexCollection" type="string" lcioInType="Vertex"> PrimaryVertices </parameter>
   <!--Switch to write out collection parameters-->
-  <parameter name="WriteCalorimeterHitCollectionParameters" type="bool">false </parameter>
+  <parameter name="WriteCalorimeterHitCollectionParameters" type="bool">true </parameter>
   <!--Switch to write out collection parameters-->
   <parameter name="WriteClusterCollectionParameters" type="bool">false </parameter>
   <!--Switch to write out collection parameters-->
