@@ -15,6 +15,7 @@
     <processor name="JetHistogramGenJetTuple"/>
     <processor name="MyJetAnalyzer" />
     <processor name="MyLCTuple" />
+    <processor name="CaloHistogramTuple" />
 	</execute>
 
 	<global>
@@ -208,12 +209,15 @@ Output_REC_s_1evt_bib10.slcio
 <parameter name="JetCollection" type="string" lcioInType="ReconstructedParticle"> RecoJet_VLC </parameter>
 </processor>
 
-
 <processor name="JetHistogramGenJetTuple" type="LCTuple">
 <parameter name="JetCollection" type="string" lcioInType="ReconstructedParticle"> GenJet_VLC </parameter>
 </processor>
 
-
+<processor name="CaloHistogramTuple" type="LCTuple">
+<parameter name="CalorimeterHitCollection" type="string" lcioInType="CalorimeterHit"> ECALBarrel ECALEndcap HCALBarrel HCALEndcap HCALOther </parameter>
+</processor>
+	
+	
 
 <processor name="VDXTrackerEndCapTuple" type="LCTuple">
 <parameter name="TrackerHitCollection" type="string" lcioInType="TrackerHit"> VXDEndcapTrackerHits </parameter>
