@@ -215,9 +215,16 @@ Output_REC_sb_1evt_bib10.slcio
 </processor>
 
 <processor name="CaloHistogramTuple" type="LCTuple">
-<parameter name="CalorimeterHitCollection" type="string" lcioInType="CalorimeterHit"> ECALBarrel ECALEndcap HCALBarrel HCALEndcap HCALOther </parameter>
-</processor>
-	
+<parameter name="CalorimeterHitCollection" type="string" lcioInType="CalorimeterHit"> 
+	ECALBarrel 
+	ECALEndcap 
+	HCALBarrel 
+	HCALEndcap 
+	HCALOther 
+</parameter>
+<parameter name="WriteCalorimeterHitCollectionParameters" type="bool">true </parameter>	
+</processor>	
+
 
 <processor name="VDXTrackerEndCapTuple" type="LCTuple">
 <parameter name="TrackerHitCollection" type="string" lcioInType="TrackerHit"> VXDEndcapTrackerHits </parameter>
