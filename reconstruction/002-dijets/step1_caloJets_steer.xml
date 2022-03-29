@@ -51,7 +51,7 @@
 
   <global>
     <parameter name="LCIOInputFiles">
-      bdijet_120-160pt_1500evt_00.slcio
+      mumu_HH_bbbb_3tev_hepmc.slcio
     </parameter>
     <!-- Limit the number of processed records (run+evt): -->
     <parameter name="MaxRecordNumber" value="-1" />
