@@ -59,36 +59,22 @@
 
   <processor name="OverlayTrimmed" type="OverlayTimingGeneric">
     <parameter name="BackgroundFileNames" type="StringVec">
-      /muoncdata/data/1500GeV/BIB/ddsim/MuCollv1_25ns_nEkin150MeV_QGSPBERT/sim_mumu-1e3x500-26m-lowth-excl_c00_allHits.slcio
-      /muoncdata/data/1500GeV/BIB/ddsim/MuCollv1_25ns_nEkin150MeV_QGSPBERT/sim_mumu-1e3x500-26m-lowth-excl_c01_allHits.slcio
-      /muoncdata/data/1500GeV/BIB/ddsim/MuCollv1_25ns_nEkin150MeV_QGSPBERT/sim_mumu-1e3x500-26m-lowth-excl_c02_allHits.slcio
-      /muoncdata/data/1500GeV/BIB/ddsim/MuCollv1_25ns_nEkin150MeV_QGSPBERT/sim_mumu-1e3x500-26m-lowth-excl_c03_allHits.slcio
-      /muoncdata/data/1500GeV/BIB/ddsim/MuCollv1_25ns_nEkin150MeV_QGSPBERT/sim_mumu-1e3x500-26m-lowth-excl_c04_allHits.slcio
-      /muoncdata/data/1500GeV/BIB/ddsim/MuCollv1_25ns_nEkin150MeV_QGSPBERT/sim_mumu-1e3x500-26m-lowth-excl_c05_allHits.slcio
-      /muoncdata/data/1500GeV/BIB/ddsim/MuCollv1_25ns_nEkin150MeV_QGSPBERT/sim_mumu-1e3x500-26m-lowth-excl_c06_allHits.slcio
-      /muoncdata/data/1500GeV/BIB/ddsim/MuCollv1_25ns_nEkin150MeV_QGSPBERT/sim_mumu-1e3x500-26m-lowth-excl_c07_allHits.slcio
-      /muoncdata/data/1500GeV/BIB/ddsim/MuCollv1_25ns_nEkin150MeV_QGSPBERT/sim_mumu-1e3x500-26m-lowth-excl_c08_allHits.slcio
-      /muoncdata/data/1500GeV/BIB/ddsim/MuCollv1_25ns_nEkin150MeV_QGSPBERT/sim_mumu-1e3x500-26m-lowth-excl_c09_allHits.slcio
-      /muoncdata/data/1500GeV/BIB/ddsim/MuCollv1_25ns_nEkin150MeV_QGSPBERT/sim_mumu-1e3x500-26m-lowth-excl_c10_allHits.slcio
-      /muoncdata/data/1500GeV/BIB/ddsim/MuCollv1_25ns_nEkin150MeV_QGSPBERT/sim_mumu-1e3x500-26m-lowth-excl_c11_allHits.slcio
-      /muoncdata/data/1500GeV/BIB/ddsim/MuCollv1_25ns_nEkin150MeV_QGSPBERT/sim_mumu-1e3x500-26m-lowth-excl_c12_allHits.slcio
-      /muoncdata/data/1500GeV/BIB/ddsim/MuCollv1_25ns_nEkin150MeV_QGSPBERT/sim_mumu-1e3x500-26m-lowth-excl_c13_allHits.slcio
-      /muoncdata/data/1500GeV/BIB/ddsim/MuCollv1_25ns_nEkin150MeV_QGSPBERT/sim_mumu-1e3x500-26m-lowth-excl_c14_allHits.slcio
-      /muoncdata/data/1500GeV/BIB/ddsim/MuCollv1_25ns_nEkin150MeV_QGSPBERT/sim_mumu-1e3x500-26m-lowth-excl_c15_allHits.slcio
-      /muoncdata/data/1500GeV/BIB/ddsim/MuCollv1_25ns_nEkin150MeV_QGSPBERT/sim_mumu-1e3x500-26m-lowth-excl_c16_allHits.slcio
-      /muoncdata/data/1500GeV/BIB/ddsim/MuCollv1_25ns_nEkin150MeV_QGSPBERT/sim_mumu-1e3x500-26m-lowth-excl_c17_allHits.slcio
-      /muoncdata/data/1500GeV/BIB/ddsim/MuCollv1_25ns_nEkin150MeV_QGSPBERT/sim_mumu-1e3x500-26m-lowth-excl_c18_allHits.slcio
-      /muoncdata/data/1500GeV/BIB/ddsim/MuCollv1_25ns_nEkin150MeV_QGSPBERT/sim_mumu-1e3x500-26m-lowth-excl_c19_allHits.slcio
-      /muoncdata/data/1500GeV/BIB/ddsim/MuCollv1_25ns_nEkin150MeV_QGSPBERT/sim_mumu-1e3x500-26m-lowth-excl_c20_allHits.slcio
-      /muoncdata/data/1500GeV/BIB/ddsim/MuCollv1_25ns_nEkin150MeV_QGSPBERT/sim_mumu-1e3x500-26m-lowth-excl_c21_allHits.slcio
-      /muoncdata/data/1500GeV/BIB/ddsim/MuCollv1_25ns_nEkin150MeV_QGSPBERT/sim_mumu-1e3x500-26m-lowth-excl_c22_allHits.slcio
-      /muoncdata/data/1500GeV/BIB/ddsim/MuCollv1_25ns_nEkin150MeV_QGSPBERT/sim_mumu-1e3x500-26m-lowth-excl_c23_allHits.slcio
-      /muoncdata/data/1500GeV/BIB/ddsim/MuCollv1_25ns_nEkin150MeV_QGSPBERT/sim_mumu-1e3x500-26m-lowth-excl_c24_allHits.slcio
-      /muoncdata/data/1500GeV/BIB/ddsim/MuCollv1_25ns_nEkin150MeV_QGSPBERT/sim_mumu-1e3x500-26m-lowth-excl_c25_allHits.slcio
-      /muoncdata/data/1500GeV/BIB/ddsim/MuCollv1_25ns_nEkin150MeV_QGSPBERT/sim_mumu-1e3x500-26m-lowth-excl_c26_allHits.slcio
-      /muoncdata/data/1500GeV/BIB/ddsim/MuCollv1_25ns_nEkin150MeV_QGSPBERT/sim_mumu-1e3x500-26m-lowth-excl_c27_allHits.slcio
-      /muoncdata/data/1500GeV/BIB/ddsim/MuCollv1_25ns_nEkin150MeV_QGSPBERT/sim_mumu-1e3x500-26m-lowth-excl_c28_allHits.slcio
-      /muoncdata/data/1500GeV/BIB/ddsim/MuCollv1_25ns_nEkin150MeV_QGSPBERT/sim_mumu-1e3x500-26m-lowth-excl_c29_allHits.slcio
+      /cvmfs/cms.hep.wisc.edu/mucol/reference/slomte_BIBsamples/sim_mumi-1e3x500-26m-lowth-excl_j1.slcio
+      /cvmfs/cms.hep.wisc.edu/mucol/reference/slomte_BIBsamples/sim_mumi-1e3x500-26m-lowth-excl_j2.slcio
+      /cvmfs/cms.hep.wisc.edu/mucol/reference/slomte_BIBsamples/sim_mumi-1e3x500-26m-lowth-excl_j3.slcio
+      /cvmfs/cms.hep.wisc.edu/mucol/reference/slomte_BIBsamples/sim_mumi-1e3x500-26m-lowth-excl_j4.slcio
+      /cvmfs/cms.hep.wisc.edu/mucol/reference/slomte_BIBsamples/sim_mumi-1e3x500-26m-lowth-excl_j5.slcio
+      /cvmfs/cms.hep.wisc.edu/mucol/reference/slomte_BIBsamples/sim_mumi-1e3x500-26m-lowth-excl_j6.slcio
+      /cvmfs/cms.hep.wisc.edu/mucol/reference/slomte_BIBsamples/sim_mumi-1e3x500-26m-lowth-excl_j7.slcio
+      /cvmfs/cms.hep.wisc.edu/mucol/reference/slomte_BIBsamples/sim_mumi-1e3x500-26m-lowth-excl_j8.slcio
+      /cvmfs/cms.hep.wisc.edu/mucol/reference/slomte_BIBsamples/sim_mupl-1e3x500-26m-lowth-excl_j1.slcio
+      /cvmfs/cms.hep.wisc.edu/mucol/reference/slomte_BIBsamples/sim_mupl-1e3x500-26m-lowth-excl_j2.slcio
+      /cvmfs/cms.hep.wisc.edu/mucol/reference/slomte_BIBsamples/sim_mupl-1e3x500-26m-lowth-excl_j3.slcio
+      /cvmfs/cms.hep.wisc.edu/mucol/reference/slomte_BIBsamples/sim_mupl-1e3x500-26m-lowth-excl_j4.slcio
+      /cvmfs/cms.hep.wisc.edu/mucol/reference/slomte_BIBsamples/sim_mupl-1e3x500-26m-lowth-excl_j5.slcio
+      /cvmfs/cms.hep.wisc.edu/mucol/reference/slomte_BIBsamples/sim_mupl-1e3x500-26m-lowth-excl_j6.slcio
+      /cvmfs/cms.hep.wisc.edu/mucol/reference/slomte_BIBsamples/sim_mupl-1e3x500-26m-lowth-excl_j7.slcio
+      /cvmfs/cms.hep.wisc.edu/mucol/reference/slomte_BIBsamples/sim_mupl-1e3x500-26m-lowth-excl_j8.slcio
     </parameter>
     <parameter name="StartBackgroundFileIndex" type="int" value="0"/>
     <parameter name="AllowReusingBackgroundFiles" type="bool" value="true" />
