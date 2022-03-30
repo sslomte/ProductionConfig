@@ -1,4 +1,4 @@
-<processor name="MyDDCaloDigi" type="DDCaloDigi">
+<processor name="MyDDCaloDigi" type="DDCaloDigi_BIB">
     <!--Performs simple digitization of sim calo hits...-->
 
     <!--Hit times histograms-->
@@ -118,7 +118,7 @@
     <!--Calibration coefficients for Other (Ring) HCAL-->
     <parameter name="CalibrHCALOther" type="FloatVec">62.2125698179</parameter>
     <!--Threshold for HCAL Hits in GeV-->
-    <parameter name="HCALThreshold" type="FloatVec">0.005  </parameter>
+    <parameter name="HCALThreshold" type="FloatVec">0.002  </parameter>
     <!--Unit for HCAL Threshold. Can be "GeV", "MIP" or "px". MIP and px need properly set calibration constants-->
     <parameter name="HCALThresholdUnit" type="string">GeV </parameter>
     <!--Energy correction for HCAL endcap-->
