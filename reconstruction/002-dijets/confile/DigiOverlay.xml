@@ -80,7 +80,7 @@
     <parameter name="AllowReusingBackgroundFiles" type="bool" value="true" />
     <parameter name="Verbosity" options="DEBUG0-4,MESSAGE0-4,WARNING0-4,ERROR0-4,SILENT">MESSAGE </parameter>
     <parameter name="NBunchtrain" type="int" value="1" />
-    <parameter name="NumberBackground" type="float" value="299" />
+    <parameter name="NumberBackground" type="float" value="29" />
   </processor>
 
   <processor name="OverlayTest" type="OverlayTimingGeneric">
