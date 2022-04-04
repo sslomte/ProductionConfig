@@ -1,4 +1,4 @@
-<processor name="MyDDCaloDigi" type="DDCaloDigi_BIB">
+<processor name="MyDDCaloDigi" type="DDCaloDigi">
     <!--Performs simple digitization of sim calo hits...-->
 
     <!--Hit times histograms-->
