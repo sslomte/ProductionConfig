@@ -47,7 +47,7 @@
     <processor name="Refit" />
 
     <!-- ========== Calo.xml ============ -->
-    <processor name="MyDDCaloDigi"/>
+    <processor name="MyDDCaloDigi_BIB"/>
     <processor name="MyDDSimpleMuonDigi"/>
     <processor name="MyDDMarlinPandora"/>
     <group name="MergeCollections" />
@@ -85,7 +85,7 @@
 <include ref="confile/DigiOverlay.xml"/>
 <include ref="confile/TrackerDigitization.xml"/>
 <include ref="confile/Tracking.xml"/>
-<include ref="confile/Calo.xml"/>
+<include ref="confile/Calo_BIB.xml"/>
 <include ref="confile/Monitoring.xml"/>
 <include ref="confile/PFOSelector.xml"/>
 <include ref="confile/VertexJet.xml"/>
