@@ -35,7 +35,7 @@
     </if>
 
     <!-- ========== output  ========== -->
-    <Xprocessor name="Output_REC"/>
+    <!--<Xprocessor name="Output_REC"/>-->
     <processor name="Output_DST"/> 
 
   </execute>
