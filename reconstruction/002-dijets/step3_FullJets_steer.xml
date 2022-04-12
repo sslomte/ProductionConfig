@@ -27,7 +27,7 @@
     <processor name="MyFastJetProcessor_step3"/>
 
     <!-- ========== output  ========== -->
-    <XXXprocessor name="Output_REC"/>
+    <!--<XXXprocessor name="Output_REC"/>-->
     <processor name="Output_DST"/> 
 
   </execute>
