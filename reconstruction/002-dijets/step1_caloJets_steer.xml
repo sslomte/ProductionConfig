@@ -44,14 +44,14 @@
     <processor name="MyFastJetProcessor_step1"/>
 
     <!-- ========== output  ========== -->
-    <Xprocessor name="Output_REC"/>
+    <!--<Xprocessor name="Output_REC"/>-->
     <processor name="Output_DST"/> 
 
   </execute>
 
   <global>
     <parameter name="LCIOInputFiles">
-      mumu_HH_bbbb_3tev_hepmc.slcio
+      mumu_H_bb.slcio
     </parameter>
     <!-- Limit the number of processed records (run+evt): -->
     <parameter name="MaxRecordNumber" value="-1" />
