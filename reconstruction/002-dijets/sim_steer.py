@@ -8,21 +8,21 @@ SIM = DD4hepSimulation()
 ## The compact XML file
 SIM.compactFile = "/opt/ilcsoft/muonc/detector-simulation/geometries/MuColl_v1/MuColl_v1.xml"
 ## Lorentz boost for the crossing angle, in radian!
-SIM.crossingAngleBoost = 0.010
+SIM.crossingAngleBoost = 0.0
 SIM.enableDetailedShowerMode = True
 SIM.enableG4GPS = False
 SIM.enableG4Gun = False
 SIM.enableGun = False
 ## InputFiles for simulation .stdhep, .slcio, .HEPEvt, .hepevt, .hepmc files are supported
-SIM.inputFiles = ["/cvmfs/cms.hep.wisc.edu/mucol/reference/slomte_BIBsamples/HH_bb_events_3.hepmc"]
+SIM.inputFiles = ["/cvmfs/cms.hep.wisc.edu/mucol/reference/slomte_BIBsamples/mumu2H2bb750.stdhep"]
 ## HepMC reader v3 is not supported
 SIM.hepmc3.useHepMC3 = False
 ## Macro file to execute for runType 'run' or 'vis'
 SIM.macroFile = []
 ## number of events to simulate, used in batch mode. -1 all
-SIM.numberOfEvents = 100
+SIM.numberOfEvents = 1
 ## Outputfile from the simulation,only lcio output is supported
-SIM.outputFile = "mumu_HH_bbbb_3tev_hepmc.slcio"
+SIM.outputFile = "mumu_H_bb.slcio"
 ## Verbosity use integers from 1(most) to 7(least) verbose
 ## or strings: VERBOSE, DEBUG, INFO, WARNING, ERROR, FATAL, ALWAYS
 SIM.printLevel = 3
