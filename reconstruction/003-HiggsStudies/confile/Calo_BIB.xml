@@ -92,7 +92,9 @@
     <parameter name="ECALDeltaTimeHitResolution" type="float">10 </parameter>
     <!--ECAL Time Resolution used to smear hit times-->
     <parameter name="ECALTimeResolution" type="float">0.250 </parameter>
-
+    
+    <parameter name ="ECAL_use_CLIC" type="bool"> true </parameter>
+    
     <!-- HCAL -->
 
     <!--HCAL Collection Names-->
