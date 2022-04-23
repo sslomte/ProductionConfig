@@ -8,7 +8,7 @@
   <parameter name="IsoLepCollection" type="string" lcioInType="ReconstructedParticle"> </parameter>
   <!--Name of the Jet collection-->
   <parameter name="JetCollection" type="string" lcioInType="ReconstructedParticle"> </parameter>
-  <parameter name="JetCollectionDaughterParameters" type="bool">true </parameter>
+  <parameter name="JetCollectionDaughtersParameters" type="bool">true </parameter>
   <!--Switch to write out extra parameters calculated using information from Jet Finder-->
   <parameter name="JetCollectionExtraParameters" type="bool">true </parameter>
   <!--Switch to write out jet parameters coming from LCFIPlus tagging processor-->
