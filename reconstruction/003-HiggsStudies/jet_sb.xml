@@ -2,8 +2,9 @@
 
 <marlin xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:noNamespaceSchemaLocation="http://ilcsoft.desy.de/marlin/marlin.xsd">
-	<execute>
 
+	
+<execute>
     <!-- ========== setup  ========== -->
     <processor name="MyAIDAProcessor"/> 
     <processor name="InitDD4hep"/>
@@ -15,18 +16,18 @@
     <processor name="JetHistogramGenJetTuple"/>
     <processor name="MyJetAnalyzer" />
     <processor name="MyLCTuple" />
-    <processor name="CaloHistogramTuple" />
-	</execute>
+    <!--processor name="CaloHistogramTuple" /-->
+</execute>
 
-	<global>
-		<parameter name="LCIOInputFiles"> 
+<global>
+<parameter name="LCIOInputFiles"> 
 Output_REC_sb_1evt_bib10.slcio
- </parameter>
-		<parameter name="MaxRecordNumber" value="-1" />
-		<parameter name="SkipNEvents" value="0" />
-		<parameter name="SupressCheck" value="false" />
-		<parameter name="Verbosity"	options="DEBUG0-4,MESSAGE0-4,WARNING0-4,ERROR0-4,SILENT"> MESSAGE  </parameter>
-	</global>
+</parameter>
+<parameter name="MaxRecordNumber" value="-1" />
+<parameter name="SkipNEvents" value="0" />
+<parameter name="SupressCheck" value="false" />
+<parameter name="Verbosity"	options="DEBUG0-4,MESSAGE0-4,WARNING0-4,ERROR0-4,SILENT"> MESSAGE  </parameter>
+</global>
 
 
   <processor name="MyAIDAProcessor" type="AIDAProcessor">
@@ -121,7 +122,7 @@ Output_REC_sb_1evt_bib10.slcio
  <!--LCTuple creates a ROOT TTRee with a column wise ntuple from LCIO collections ....-->
   <parameter name="FullSubsetCollections" type="StringVec"> </parameter>
   <!--Name of the CalorimeterHit collection-->
-  <parameter name="CalorimeterHitCollection" type="string" lcioInType="CalorimeterHit"> ECALBarrel ECALEndcap HCALBarrel HCALEndcap HCALOther </parameter>
+  <parameter name="CalorimeterHitCollection" type="string" lcioInType="CalorimeterHit"> </parameter>
   <!--Name of the Cluster collection-->
   <parameter name="ClusterCollection" type="string" lcioInType="Cluster"> </parameter>
   <!--Name of the IsoLep collection-->
@@ -207,11 +208,24 @@ Output_REC_sb_1evt_bib10.slcio
 
 <processor name="JetHistogramRecoJetTuple" type="LCTuple">
 <parameter name="JetCollection" type="string" lcioInType="ReconstructedParticle"> RecoJet_VLC </parameter>
+<parameter name="JetCollectionExtraParameters" type="bool">true </parameter>
+<parameter name="JetCollectionTaggingParameters" type="bool">false </parameter>
+<parameter name="WriteJetCollectionParameters" type="bool">true </parameter>
+<parameter name="JetCollectionDaughterParameters" type="bool">true </parameter>
+	
+<parameter name="RecoParticleCollection" type="string" lcioInType="ReconstructedParticle"> PandoraPFOsNoLeptonsInJets </parameter>
+<parameter name="WriteRecoParticleCollectionParameters" type="bool">true </parameter>
 </processor>
 
 
 <processor name="JetHistogramGenJetTuple" type="LCTuple">
 <parameter name="JetCollection" type="string" lcioInType="ReconstructedParticle"> GenJet_VLC </parameter>
+<parameter name="JetCollectionExtraParameters" type="bool">true </parameter>
+<parameter name="JetCollectionTaggingParameters" type="bool">false </parameter>
+<parameter name="WriteJetCollectionParameters" type="bool">true </parameter>
+<parameter name="JetCollectionDaughterParameters" type="bool">true </parameter>
+<parameter name="RecoParticleCollection" type="string" lcioInType="ReconstructedParticle"> MCParticlePandoraPFOsInJet </parameter>
+<parameter name="WriteRecoParticleCollectionParameters" type="bool">true </parameter>
 </processor>
 
 <processor name="CaloHistogramTuple" type="LCTuple">
