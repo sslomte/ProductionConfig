@@ -211,7 +211,7 @@ Output_REC_sb_1evt_bib10.slcio
 <parameter name="JetCollectionExtraParameters" type="bool">true </parameter>
 <parameter name="JetCollectionTaggingParameters" type="bool">false </parameter>
 <parameter name="WriteJetCollectionParameters" type="bool">true </parameter>
-<parameter name="JetCollectionDaughterParameters" type="bool">true </parameter>
+<parameter name="JetCollectionDaughtersParameters" type="bool">true </parameter>
 	
 <parameter name="RecoParticleCollection" type="string" lcioInType="ReconstructedParticle"> PandoraPFOsNoLeptonsInJets </parameter>
 <parameter name="WriteRecoParticleCollectionParameters" type="bool">true </parameter>
@@ -223,7 +223,7 @@ Output_REC_sb_1evt_bib10.slcio
 <parameter name="JetCollectionExtraParameters" type="bool">true </parameter>
 <parameter name="JetCollectionTaggingParameters" type="bool">false </parameter>
 <parameter name="WriteJetCollectionParameters" type="bool">true </parameter>
-<parameter name="JetCollectionDaughterParameters" type="bool">true </parameter>
+<parameter name="JetCollectionDaughtersParameters" type="bool">true </parameter>
 <parameter name="RecoParticleCollection" type="string" lcioInType="ReconstructedParticle"> MCParticlePandoraPFOsInJet </parameter>
 <parameter name="WriteRecoParticleCollectionParameters" type="bool">true </parameter>
 </processor>
