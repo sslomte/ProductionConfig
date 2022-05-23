@@ -211,7 +211,7 @@
 <parameter name="JetCollectionTaggingParameters" type="bool">false </parameter>
 <parameter name="WriteJetCollectionParameters" type="bool">true </parameter>
 <parameter name="JetCollectionDaughtersParameters" type="bool">true </parameter>
-<parameter name="RecoParticleCollection" type="string" lcioInType="ReconstructedParticle"> PandoraPFOsInJets </parameter>
+<parameter name="RecoParticleCollection" type="string" lcioInType="ReconstructedParticle"> PandoraPFOsNoLeptonsInJets </parameter>
 <parameter name="WriteRecoParticleCollectionParameters" type="bool">true </parameter>	
 </processor>
 
@@ -279,7 +279,7 @@
 </processor>
 
 	<processor name="MyFastJetProcessor" type="FastJetProcessor">
-		<parameter name="algorithm" type="StringVec">kt_algorithm 0.7</parameter>
+		<parameter name="algorithm" type="StringVec">antikt_algorithm 0.5</parameter>
 		<parameter name="clusteringMode" type="StringVec"> Inclusive 5</parameter>
 		<parameter name="jetOut" type="string" lcioOutType="ReconstructedParticle">JetOut </parameter>
 		<parameter name="recParticleIn" type="string" lcioInType="ReconstructedParticle"> PandoraPFOs </parameter>
@@ -325,7 +325,7 @@
 <processor name="MyFastGenJetProcessor" type="FastJetProcessor">
   <parameter name="recParticleIn" type="string" lcioInType="ReconstructedParticle"> MCParticlePandoraPFOs </parameter>
   <!--parameters are R, beta, gamma -->
-  <parameter name="algorithm" type="StringVec"> kt_algorithm 0.7 </parameter>
+  <parameter name="algorithm" type="StringVec"> antikt_algorithm 0.5 </parameter>
   <parameter name="clusteringMode" type="StringVec"> Inclusive 5 </parameter>
   <parameter name="recombinationScheme" type="string">E_scheme </parameter>
   <parameter name="jetOut" type="string" lcioOutType="ReconstructedParticle">GenJet_VLC</parameter>
@@ -334,14 +334,14 @@
 </processor>
 
 <processor name="MyFastRecoJetProcessor" type="FastJetProcessor">
-  <parameter name="recParticleIn" type="string" lcioInType="ReconstructedParticle"> PandoraPFOs </parameter>
+  <parameter name="recParticleIn" type="string" lcioInType="ReconstructedParticle"> PandoraPFOsNoLeptons </parameter>
   <!--parameters are R, beta, gamma -->
-  <parameter name="algorithm" type="StringVec"> kt_algorithm 0.7 </parameter>
+  <parameter name="algorithm" type="StringVec"> antikt_algorithm 0.5 </parameter>
   <parameter name="clusteringMode" type="StringVec"> Inclusive 5 </parameter>
   <parameter name="recombinationScheme" type="string">E_scheme </parameter>
   <parameter name="jetOut" type="string" lcioOutType="ReconstructedParticle">RecoJet_VLC</parameter>
   <parameter name="storeParticlesInJets" type="bool">true</parameter>
-  <parameter name="recParticleOut" type="string" lcioOutType="ReconstructedParticle"> PandoraPFOsInJets </parameter>
+  <parameter name="recParticleOut" type="string" lcioOutType="ReconstructedParticle"> PandoraPFOsNoLeptonsInJets </parameter>
 </processor>
 	<processor name="MyLCIOOutputProcessor" type="LCIOOutputProcessor">
 		<parameter name="LCIOOutputFile" type="string">outputfile_s.slcio </parameter>
