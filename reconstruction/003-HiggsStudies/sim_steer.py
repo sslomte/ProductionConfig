@@ -14,7 +14,8 @@ SIM.enableG4GPS = False
 SIM.enableG4Gun = False
 SIM.enableGun = False
 ## InputFiles for simulation .stdhep, .slcio, .HEPEvt, .hepevt, .hepmc files are supported
-SIM.inputFiles = ["/cvmfs/cms.hep.wisc.edu/mucol/reference/slomte_BIBsamples/mumu2H2bb750.stdhep"]
+#SIM.inputFiles = ["/cvmfs/cms.hep.wisc.edu/mucol/reference/slomte_BIBsamples/mumu2H2bb750.stdhep"]
+SIM.inputFiles = ["Hbb_1p5TeV.hepmc"]
 ## HepMC reader v3 is not supported
 SIM.hepmc3.useHepMC3 = False
 ## Macro file to execute for runType 'run' or 'vis'
