@@ -13,7 +13,8 @@
     <!--<processor name="MyLCIOOutputProcessor" />-->
     <processor name="JetHistogramRecoJetTuple"/>
     <processor name="JetHistogramGenJetTuple"/>
-    <processor name="MyJetAnalyzer" />
+    <processor name="MyJetAnalyzer"/>
+    <processor name="MCParticlesTuple"/>		
     <processor name="MyLCTuple" />
     <!--processor name="CaloHistogramTuple" /-->
 	</execute>
@@ -236,8 +237,11 @@
 <parameter name="WriteCalorimeterHitCollectionParameters" type="bool">true </parameter>	
 </processor>
 	
+<processor name="MCParticlesTuple" type="LCTuple">
+<parameter name="MCParticleCollection" type="string" lcioInType="MCParticle"> MCParticle </parameter>
+<parameter name="WriteMCParticleCollectionParameters" type="bool">true </parameter>	
+</processor>
 	
-
 <processor name="VDXTrackerEndCapTuple" type="LCTuple">
 <parameter name="TrackerHitCollection" type="string" lcioInType="TrackerHit"> VXDEndcapTrackerHits </parameter>
 </processor>
@@ -325,7 +329,7 @@
 <processor name="MyFastGenJetProcessor" type="FastJetProcessor">
   <parameter name="recParticleIn" type="string" lcioInType="ReconstructedParticle"> MCParticlePandoraPFOs </parameter>
   <!--parameters are R, beta, gamma -->
-  <parameter name="algorithm" type="StringVec"> antikt_algorithm 0.7 </parameter>
+  <parameter name="algorithm" type="StringVec"> antikt_algorithm 0.5 </parameter>
   <parameter name="clusteringMode" type="StringVec"> Inclusive 5 </parameter>
   <parameter name="recombinationScheme" type="string">E_scheme </parameter>
   <parameter name="jetOut" type="string" lcioOutType="ReconstructedParticle">GenJet_VLC</parameter>
@@ -336,7 +340,7 @@
 <processor name="MyFastRecoJetProcessor" type="FastJetProcessor">
   <parameter name="recParticleIn" type="string" lcioInType="ReconstructedParticle"> PandoraPFOsNoLeptons </parameter>
   <!--parameters are R, beta, gamma -->
-  <parameter name="algorithm" type="StringVec"> antikt_algorithm 0.7 </parameter>
+  <parameter name="algorithm" type="StringVec"> antikt_algorithm 0.5 </parameter>
   <parameter name="clusteringMode" type="StringVec"> Inclusive 5 </parameter>
   <parameter name="recombinationScheme" type="string">E_scheme </parameter>
   <parameter name="jetOut" type="string" lcioOutType="ReconstructedParticle">RecoJet_VLC</parameter>
