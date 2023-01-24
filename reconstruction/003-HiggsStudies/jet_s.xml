@@ -206,15 +206,15 @@
 <parameter name="VertexCollection" type="string" lcioInType="Vertex"> BuildUpVertices </parameter>
 </processor>
 
-<!--processor name="JetHistogramRecoJetTuple" type="LCTuple">
-<parameter name="JetCollection" type="string" lcioInType="ReconstructedParticle"> RecoJet_VLC </parameter>
+<processor name="JetHistogramRecoJetTuple" type="LCTuple">
+<!--parameter name="JetCollection" type="string" lcioInType="ReconstructedParticle"> RecoJet_VLC </parameter>
 <parameter name="JetCollectionExtraParameters" type="bool">true </parameter>
 <parameter name="JetCollectionTaggingParameters" type="bool">false </parameter>
 <parameter name="WriteJetCollectionParameters" type="bool">true </parameter>
 <parameter name="JetCollectionDaughtersParameters" type="bool">true </parameter>
 <parameter name="RecoParticleCollection" type="string" lcioInType="ReconstructedParticle"> PandoraPFOsNoLeptonsInJets </parameter>
-<parameter name="WriteRecoParticleCollectionParameters" type="bool">true </parameter>	
-</processor-->
+<parameter name="WriteRecoParticleCollectionParameters" type="bool">true </parameter-->	
+</processor>
 
 <processor name="JetHistogramGenJetTuple" type="LCTuple">
 <parameter name="JetCollection" type="string" lcioInType="ReconstructedParticle"> GenJet_VLC </parameter>
