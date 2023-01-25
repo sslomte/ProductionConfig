@@ -7,14 +7,14 @@
     <!-- ========== setup  ========== -->
     <processor name="MyAIDAProcessor"/> 
     <processor name="InitDD4hep"/>
+    <processor name="MCParticlesTuple"/>		
     <processor name="MyTrueMCintoRecoForJets"/>     
     <processor name="MyFastGenJetProcessor"/>  
     <processor name="MyFastRecoJetProcessor"/>
     <!--<processor name="MyLCIOOutputProcessor" />-->
     <processor name="JetHistogramRecoJetTuple"/>
     <processor name="JetHistogramGenJetTuple"/>
-    <processor name="MyJetAnalyzer"/>
-    <processor name="MCParticlesTuple"/>		
+    <processor name="MyJetAnalyzer"/>		
     <processor name="MyLCTuple" />
     <!--processor name="CaloHistogramTuple" /-->
 	</execute>
@@ -207,13 +207,13 @@
 </processor>
 
 <processor name="JetHistogramRecoJetTuple" type="LCTuple">
-<!--parameter name="JetCollection" type="string" lcioInType="ReconstructedParticle"> RecoJet_VLC </parameter>
+<parameter name="JetCollection" type="string" lcioInType="ReconstructedParticle"> RecoJet_VLC </parameter>
 <parameter name="JetCollectionExtraParameters" type="bool">true </parameter>
 <parameter name="JetCollectionTaggingParameters" type="bool">false </parameter>
 <parameter name="WriteJetCollectionParameters" type="bool">true </parameter>
 <parameter name="JetCollectionDaughtersParameters" type="bool">true </parameter>
 <parameter name="RecoParticleCollection" type="string" lcioInType="ReconstructedParticle"> PandoraPFOsNoLeptonsInJets </parameter>
-<parameter name="WriteRecoParticleCollectionParameters" type="bool">true </parameter-->	
+<parameter name="WriteRecoParticleCollectionParameters" type="bool">true </parameter>	
 </processor>
 
 <processor name="JetHistogramGenJetTuple" type="LCTuple">
